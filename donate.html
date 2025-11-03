@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - NexaScale</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/donate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+   <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-container">
+                        <div class="logo-image">
+                            <img src="img/Logo.jpeg" alt="Codesphere Hub Logo">
+                        </div>
+                        <div class="logo-text">Codesphere Hub</div>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="programs.html">Our Programs</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html" class="btn-primary">Donate</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Support Our Mission</h1>
+            <p>Your donation helps us empower the next generation of tech talent</p>
+        </div>
+    </section>
+
+    <!-- Donation Impact -->
+    <section class="donation-impact">
+        <div class="container">
+            <h2>Your Impact</h2>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>$50</h3>
+                    <p>Provides a student with laptop access for one month</p>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>$100</h3>
+                    <p>Covers study materials for one participant</p>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>$250</h3>
+                    <p>Sponsors cloud certification for one student</p>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3>$500</h3>
+                    <p>Funds a STEM outreach session at a school</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Options -->
+    <section class="donation-options">
+        <div class="container">
+            <div class="donation-grid">
+                <div class="donation-info">
+                    <h2>Ways to Give</h2>
+                    
+                    <div class="giving-option">
+                        <h3>One-Time Donation</h3>
+                        <p>Make a single contribution to support our programs and initiatives.</p>
+                    </div>
+                    
+                    <div class="giving-option">
+                        <h3>Monthly Support</h3>
+                        <p>Become a sustaining donor with automatic monthly contributions that provide consistent funding for our programs.</p>
+                    </div>
+                    
+                    <div class="giving-option">
+                        <h3>Corporate Matching</h3>
+                        <p>Many employers match charitable donations. Check if your company has a matching gift program to double your impact.</p>
+                    </div>
+                    
+                    <div class="giving-option">
+                        <h3>Equipment Donation</h3>
+                        <p>Donate laptops, tablets, or other tech equipment to support participants in our programs.</p>
+                    </div>
+                </div>
+                
+                <div class="donation-form-container">
+                    <h2>Make a Donation</h2>
+                    <form id="donationForm">
+                        <div class="form-group">
+                            <label for="donationAmount">Donation Amount</label>
+                            <div class="amount-options">
+                                <button type="button" class="amount-option" data-amount="50">$50</button>
+                                <button type="button" class="amount-option" data-amount="100">$100</button>
+                                <button type="button" class="amount-option" data-amount="250">$250</button>
+                                <button type="button" class="amount-option" data-amount="500">$500</button>
+                            </div>
+                            <div class="custom-amount">
+                                <label for="customAmount">Or enter custom amount:</label>
+                                <input type="number" id="customAmount" name="customAmount" min="1" placeholder="Other amount">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="donationType">Donation Type</label>
+                            <select id="donationType" name="donationType" required>
+                                <option value="">Select donation type</option>
+                                <option value="one-time">One-Time Donation</option>
+                                <option value="monthly">Monthly Donation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="designation">Designate Your Gift (Optional)</label>
+                            <select id="designation" name="designation">
+                                <option value="">Where needed most</option>
+                                <option value="study-groups">Study Groups</option>
+                                <option value="stem-stars">Future STEM Stars</option>
+                                <option value="laptops">Laptop Sharing Initiative</option>
+                                <option value="mentorship">Cloud Mentorship</option>
+                                <option value="general">General Support</option>
+                            </select>
+                        </div>
+                        
+                        <h3>Personal Information</h3>
+                        
+                        <div class="form-group">
+                            <label for="donorName">Full Name</label>
+                            <input type="text" id="donorName" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="donorEmail">Email Address</label>
+                            <input type="email" id="donorEmail" name="email" required>
+                        </div>
+                        
+                        <div class="form-check">
+                            <input type="checkbox" id="anonymous" name="anonymous">
+                            <label for="anonymous">I would like to make this donation anonymously</label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Donate Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Ways to Support -->
+    <section class="other-support">
+        <div class="container">
+            <h2>Other Ways to Support NexaScale</h2>
+            <div class="support-options">
+                <div class="support-card">
+                    <h3>Corporate Sponsorship</h3>
+                    <p>Partner with us as a corporate sponsor to support specific programs or events while gaining visibility in the tech community.</p>
+                    <a href="contact.html" class="btn-card">Learn More</a>
+                </div>
+                
+                <div class="support-card">
+                    <h3>In-Kind Donations</h3>
+                    <p>Donate software licenses, cloud credits, office space, or other resources that can support our operations and programs.</p>
+                    <a href="contact.html" class="btn-card">Contact Us</a>
+                </div>
+                
+                <div class="support-card">
+                    <h3>Volunteer Your Time</h3>
+                    <p>Share your expertise by mentoring participants, leading workshops, or helping with events and operations.</p>
+                    <a href="get-involved.html" class="btn-card">Volunteer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Reach out to us</h3>
+                    <p>If you'd like to volunteer or donate to any of our programs, reach out to us through any of these channels:</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contact@nexascale.org</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect with us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2025 NexaScale - All rights reserved.</p>
+                <p>Codesphere hub is a community where tech professionals come together</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/donate.js"></script>
+</body>
+</html>

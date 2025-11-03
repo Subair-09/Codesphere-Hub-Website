@@ -1,0 +1,347 @@
+/* About Content */
+.about-content {
+    padding: 80px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.about-text h2 {
+    color: var(--light-violet);
+    margin-top: 2rem;
+}
+
+.about-text h2:first-child {
+    margin-top: 0;
+}
+
+.about-text ul {
+    margin-left: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.about-text li {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.stat-card {
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    color: var(--light-violet);
+    margin-bottom: 0.5rem;
+}
+
+/* Team Section */
+.team-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.team-section h2 {
+    margin-bottom: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.member-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+}
+
+.team-member h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design for About */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Partners Section */
+.partners-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.partners-section h2 {
+    margin-bottom: 1rem;
+}
+
+.partners-section p {
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.partner-logo {
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: translateY(-5px);
+}
+
+.logo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+.logo-placeholder i {
+    font-size: 3rem;
+    color: var(--light-violet);
+    margin-bottom: 1rem;
+}
+
+.logo-placeholder p {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Team Intro */
+.team-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+}
+
+.team-member .role {
+    color: var(--light-violet);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.team-member .bio {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-light);
+}
+
+/* Newsletter in Footer */
+.newsletter-signup {
+    margin-top: 2rem;
+}
+
+.newsletter-signup p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    color: var(--white);
+    font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--light-violet);
+}
+
+.newsletter-form .btn-primary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+/* Responsive Design for About Page */
+@media (max-width: 768px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Team Member Photos */
+.member-image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    border: 3px solid var(--glass-border);
+    transition: all 0.3s ease;
+}
+
+.team-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.member-image .social-links {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(26, 26, 46, 0.9);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.member-image .social-links a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--violet);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.member-image .social-links a:hover {
+    background: var(--light-violet);
+    transform: translateY(-2px);
+}
+
+.team-member:hover .member-image {
+    border-color: var(--violet);
+    transform: scale(1.05);
+}
+
+.team-member:hover .team-photo {
+    transform: scale(1.1);
+}
+
+.team-member:hover .social-links {
+    transform: translateY(0);
+}
+
+/* Fallback for missing team photos */
+.member-image::before {
+    content: "👤";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    display: none;
+}
+
+.member-image:has(.team-photo[src=""])::before,
+.member-image:not(:has(.team-photo))::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: var(--glass-bg);
+}
+
+.member-image:has(.team-photo[src=""]) .team-photo,
+.member-image:not(:has(.team-photo)) {
+    display: none;
+}
+
+/* Responsive Team Photos */
+@media (max-width: 768px) {
+    .member-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .member-image::before {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .member-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .member-image::before {
+        font-size: 2rem;
+    }
+    
+    .member-image .social-links a {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+}

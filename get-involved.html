@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved - NexaScale</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/get-involved.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+   <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-container">
+                        <div class="logo-image">
+                            <img src="img/Logo.jpeg" alt="Codesphere Hub Logo">
+                        </div>
+                        <div class="logo-text">Codesphere Hub</div>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="programs.html">Our Programs</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="donate.html" class="btn-primary">Donate</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get Involved</h1>
+            <p>Join our mission to empower the next generation of tech talent</p>
+        </div>
+    </section>
+
+    <!-- Involvement Options -->
+    <section class="involvement-options">
+        <div class="container">
+            <div class="options-grid">
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Participant</h3>
+                    <p>Join our programs to develop your skills, build your network, and launch your tech career.</p>
+                    <ul>
+                        <li>Study Groups</li>
+                        <li>Hackathons</li>
+                        <li>Mentorship Programs</li>
+                        <li>Apprenticeships</li>
+                    </ul>
+                    <a href="contact.html" class="btn-primary">Apply Now</a>
+                </div>
+
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Volunteer</h3>
+                    <p>Share your expertise and time to guide the next generation of tech professionals.</p>
+                    <ul>
+                        <li>Mentoring</li>
+                        <li>Workshop Facilitation</li>
+                        <li>Career Coaching</li>
+                        <li>Event Support</li>
+                    </ul>
+                    <a href="contact.html" class="btn-primary">Volunteer Now</a>
+                </div>
+
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Donor</h3>
+                    <p>Support our mission financially to help us reach more aspiring tech professionals.</p>
+                    <ul>
+                        <li>One-time Donations</li>
+                        <li>Recurring Support</li>
+                        <li>Corporate Sponsorship</li>
+                        <li>Equipment Donations</li>
+                    </ul>
+                    <a href="donate.html" class="btn-primary">Donate Now</a>
+                </div>
+
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Partner</h3>
+                    <p>Collaborate with us to create opportunities and build a more diverse tech workforce.</p>
+                    <ul>
+                        <li>Corporate Partnerships</li>
+                        <li>Educational Collaborations</li>
+                        <li>Community Organizations</li>
+                        <li>Technology Providers</li>
+                    </ul>
+                    <a href="contact.html" class="btn-primary">Partner With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Form -->
+    <section class="volunteer-form">
+        <div class="container">
+            <div class="form-container">
+                <h2>Volunteer Application</h2>
+                <p>Fill out the form below to express your interest in volunteering with NexaScale</p>
+                <form id="volunteerForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="expertise">Area of Expertise</label>
+                        <select id="expertise" name="expertise" required>
+                            <option value="">Select an area</option>
+                            <option value="cloud">Cloud Computing</option>
+                            <option value="web">Web Development</option>
+                            <option value="data">Data Science</option>
+                            <option value="ai">AI/ML</option>
+                            <option value="cyber">Cybersecurity</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Volunteer Interest</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select an interest</option>
+                            <option value="mentor">Mentoring</option>
+                            <option value="workshop">Workshop Facilitation</option>
+                            <option value="career">Career Coaching</option>
+                            <option value="event">Event Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Why do you want to volunteer with NexaScale?</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Reach out to us</h3>
+                    <p>If you'd like to volunteer or donate to any of our programs, reach out to us through any of these channels:</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> contact@nexascale.org</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect with us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2025 NexaScale - All rights reserved.</p>
+                <p>Codesphere hub is a community where tech professionals come together</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/get-involved.js"></script>
+
+</body>
+</html>
